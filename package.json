@@ -1,0 +1,33 @@
+{
+  "name": "testa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w",
+    "dist": "electron-builder --win",
+    "dev": "webpack && webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "oracledb": "github:oracle/node-oracledb#dev-2.0"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.2",
+    "copy-webpack-plugin": "^4.0.1",
+    "electron": "^1.6.11",
+    "electron-builder": "^19.19.1",
+    "typescript": "^2.4.2",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "build": {
+    "appId": "your.id",
+    "win": {
+      "icon": "b.ico"
+    }
+  }
+}
